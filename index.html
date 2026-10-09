@@ -26,69 +26,80 @@
       <div class="container hero-grid"><div class="hero-copy">
         <p class="eyebrow"><span class="small-line" aria-hidden="true"></span>A proposed workshop at ICLR 2027</p>
         <h1 id="hero-title">Principles of <em>Generative Discovery</em> in the Sciences</h1>
-        <p class="hero-description">Foundations, methods, and validation for generative models that explore beyond existing data and learn from experiments.</p>
         <div class="hero-actions"><a class="button" href="#participate">Call for papers <span aria-hidden="true">→</span></a><a class="text-link" href="#speakers">Invited speakers <span aria-hidden="true">→</span></a></div>
-      </div><figure class="hero-figure"><img src="assets/discovery.svg" width="560" height="580" alt="An abstract discovery landscape: candidate designs branch out from known data into unexplored regions, with experimental feedback connecting generation, evaluation, and learning."><figcaption><span class="figure-label">THE DISCOVERY LOOP</span><span>Generate. Evaluate. Learn. Explore.</span></figcaption></figure></div>
+      </div><figure class="hero-figure"><img src="assets/discovery.svg" width="520" height="480" alt="Generative models explore beyond known data to propose new candidates. Experiments evaluate selected candidates and provide feedback for further generation."><figcaption>Explore, adapt, and learn from experiments.</figcaption></figure></div>
       <div class="container hero-meta"><p><span class="meta-label">Edition</span>Founding workshop</p><p><span class="meta-label">Conference</span>Proposed for ICLR 2027</p><p><span class="meta-label">Date &amp; venue</span>To be confirmed</p><p><span class="meta-label">Submissions</span>Not yet open</p></div>
     </section>
     <section class="section container about-section" id="about" aria-labelledby="about-title">
       <h2 id="about-title">Workshop scope</h2>
       <div class="about-body">
-        <p>Generative models are enabling protein and enzyme design, antimicrobial peptide discovery, materials synthesis, and astronomical reconstruction from sparse measurements. GenDisc studies the principles that turn candidate generation into scientific discovery: exploring beyond known data, adapting to experimental feedback, and selecting informative experiments.</p>
-        <p>GenDisc brings together generative modelling, sequential decision-making, optimisation, and the experimental sciences around four shared challenges:</p>
+        <p>Generative models are opening new avenues for discovery across the experimental sciences. RFdiffusion has produced experimentally validated protein binders; DISCO has designed heme enzymes that catalyse new-to-nature reactions; and AMP-Diffusion has generated antimicrobial peptides that reduced drug-resistant skin infections in mice. Beyond molecular design, MatterGen guided the synthesis of a material with controlled stiffness, while diffusion priors enabled exploration of alternative black hole reconstructions consistent with sparse telescope measurements.</p>
+        <p>A generative model is not itself a discovery system: matching the distribution of known structures and sampling from it does not determine how to explore promising regions, adapt from feedback, or choose informative experiments. Valuable designs may lie beyond a model’s current reach, while their validity and utility may only be revealed through uncertain and costly feedback.</p>
+        <p>Generative discovery is an emerging area of machine learning at the intersection of generative modelling, sequential decision-making, and optimisation, centred on a common question: <strong>How should generative models explore, adapt, and learn from experiments to enable discovery in the experimental sciences?</strong></p>
+        <p>Addressing this question raises open problems in generative discovery foundations, methods, systems, and evaluation metrics. The following are <strong>representative examples of open problems</strong> across four broad themes:</p>
         <ul class="scope-points">
-          <li><strong>Objectives.</strong> Formalising novelty, diversity, feasibility, and scientific value, including rare outcomes and competing goals.</li>
-          <li><strong>Exploration.</strong> Reaching valid, valuable candidates beyond the regions covered by training data.</li>
-          <li><strong>Learning from feedback.</strong> Adapting generators and choosing experiments under scarce data, uncertain measurements, and limited budgets.</li>
-          <li><strong>Validation.</strong> Connecting computational metrics to experimental outcomes and distinguishing novelty to a model from novelty to science.</li>
+          <li><strong>Objectives and formulations.</strong> What should a discovery system optimise when success depends on novelty, diversity, feasibility, and scientific value? How should these objectives be formalised beyond likelihood or average reward?</li>
+          <li><strong>Exploration with generative models.</strong> How can models explore valid, valuable regions underrepresented or absent in their training data? When should a system optimise within its current reach, and when should it expand what it can generate?</li>
+          <li><strong>Learning from data and feedback.</strong> How can generators learn from incomplete data and scarce, uncertain, or costly feedback? How should they quantify uncertainty, select informative experiments, and adapt efficiently across sources of differing fidelity?</li>
+          <li><strong>Definition and validation of discoveries.</strong> How should progress be measured and discoveries validated? How can we distinguish novelty to the model from novelty to science, and align computational metrics to experimental outcomes?</li>
         </ul>
-        <p>Our aim is to establish shared objectives, algorithms, and standards of evidence. Scientific applications expose assumptions and limitations, helping shape foundations and methods that transfer across biology, chemistry, neuroscience, ecology, physics, and beyond.</p>
+        <p>GenDisc focuses on foundational and methodological questions, using applications in experimental sciences to test conceptual assumptions, expose algorithmic limitations, and ultimately shape theoretical and methodological frameworks for real-world validation and scientific impact.</p>
       </div>
     </section>
     <section class="participate-section" id="participate" aria-labelledby="participate-title"><div class="container section">
       <div class="section-top"><h2 id="participate-title">Call for papers</h2><span class="status-label">Draft call · submissions not open</span></div>
-      <p class="cfp-intro">We welcome work on generative methods for discovering scientifically valuable structures, designs, and hypotheses. Contributions should offer insights into generative discovery that may extend beyond a single application. <strong>Perspectives, benchmarks, and negative results are welcome in every format.</strong></p>
+      <p class="cfp-intro">GenDisc focuses on the questions that arise when generative models are used to discover scientifically valuable structures, designs, and hypotheses. We welcome work across the following themes. <strong>The sub-topics listed below are illustrative rather than exhaustive.</strong></p>
       <div class="cfp-topics" id="themes" aria-labelledby="topics-title">
         <h3 id="topics-title">Topics of interest</h3>
         <div class="theme-grid">
           <article class="theme"><h4>Theory and foundations</h4><ul>
-            <li>Novelty, diversity, scientific value, and generative reach.</li>
-            <li>Rare-event, risk-sensitive, and multi-objective formulations.</li>
-            <li>Exploration and coverage beyond the training distribution.</li>
-            <li>Optimisation theory and the sample, computational, and experimental complexity of discovery.</li>
+            <li>Formalisations of novelty, surprise, creativity, scientific value, and generative reach.</li>
+            <li>Objectives beyond expected reward, including rare event generation, risk-sensitive control, and multi-objective formulations.</li>
+            <li>Optimisation theory for discovery-oriented generative objectives.</li>
+            <li>Out-of-distribution generative modelling and coverage beyond the training distribution.</li>
+            <li>Theory of exploration and open-endedness in generative models.</li>
+            <li>Limits on the sample, computational, and experimental complexity of discovery.</li>
           </ul></article>
           <article class="theme"><h4>Methods and systems</h4><ul>
-            <li>Generative optimisation and inverse design.</li>
-            <li>Steering, composing, and fine-tuning generators for exploration and discovery.</li>
-            <li>Adaptation from experimental or multi-fidelity feedback; simulation-to-experiment transfer.</li>
-            <li>Active experiment selection and closed-loop discovery under limited budgets.</li>
+            <li>Generative optimisation and inverse design via generative priors.</li>
+            <li>Algorithms that steer, compose, or fine-tune pretrained generators for discovery.</li>
+            <li>Exploration and diverse sample generation via generative model steering.</li>
+            <li>Rare event generation and distributional control of generative models.</li>
+            <li>Sample-efficient generative model steering and fine-tuning.</li>
+            <li>Adapting generative models via experimental, approximate, or multi-fidelity feedback.</li>
+            <li>Sim-to-real gap, or test-time distribution shift between computational and real experiments.</li>
+            <li>Out-of-distribution generative modelling for discovery.</li>
+            <li>Active and cost-aware selection of informative experiments via generative models.</li>
+            <li>Generative models within closed-loop discovery systems.</li>
           </ul></article>
-          <article class="theme"><h4>Computational and experimental validation</h4><ul>
-            <li>Prospective experiments and high-fidelity validation of candidates and hypotheses.</li>
+          <article class="theme"><h4>Computational or experimental validation</h4><ul>
+            <li>Prospective experimental or high-fidelity validation of generated candidates.</li>
             <li>Benchmarks for novelty, diversity, validity, utility, and efficiency.</li>
+            <li>Validation of generated experiments and scientific hypotheses.</li>
             <li>Evaluation under noisy measurements, imperfect oracles, and feasibility constraints.</li>
-            <li>Reproducibility, robustness, and informative positive or negative results.</li>
+            <li>Replication, reproducibility, and robustness of discovery claims.</li>
+            <li>Positive or negative results in any application that reveal insights, strengths, or limitations of current generative discovery methods.</li>
           </ul></article>
         </div>
       </div>
       <div class="scope-note">
-        <p>The topics are illustrative. All generative approaches are welcome, including diffusion and flow models, autoregressive and discrete models, GFlowNets, energy-based and latent-variable models, and evolutionary or hybrid search.</p>
-        <p><strong>Outside the scope:</strong> pure prediction; generation assessed only by sample quality; general-purpose generative modelling or post-training without a discovery objective; and application-specific results without broader methodological insights.</p>
+        <p>This workshop is agnostic to the choice of generative model. Relevant approaches include diffusion and flow models, autoregressive and discrete generative models, GFlowNets, energy-based and latent-variable models, and evolutionary or hybrid generative search; related approaches are equally welcome. Scientific domains may provide motivating problems and evidence, but contributions should address questions or principles of generative discovery that might extend beyond a single application.</p>
+        <p><strong>Out of scope:</strong> pure prediction; unconditional generation evaluated only by sample quality; general-purpose generative modelling or post-training without a discovery-related objective; and application-specific work whose primary contribution is a result in one scientific domain rather than a broader methodological insight about generative discovery that might transfer across domains.</p>
       </div>
       <div class="participate-grid">
         <div class="submission-details">
           <h3 id="formats-title">Submission formats</h3>
           <table class="format-table" aria-labelledby="formats-title"><thead><tr><th scope="col">Format</th><th scope="col">Limit</th><th scope="col">Contribution</th></tr></thead><tbody>
             <tr><th scope="row">Full paper</th><td>9 pages</td><td>Original contributions addressing the workshop themes.</td></tr>
-            <tr><th scope="row">Short paper</th><td>4 pages</td><td>Preliminary results, focused observations, or recent findings.</td></tr>
-            <tr><th scope="row">Tiny paper</th><td>2 pages</td><td>Simple ideas with initial evaluation, modest theoretical results, re-analyses, or new perspectives.</td></tr>
+            <tr><th scope="row">Short paper</th><td>4 pages</td><td>Preliminary results, focused observations, and recent findings.</td></tr>
+            <tr><th scope="row">Tiny paper</th><td>2 pages</td><td>Simple ideas with initial evaluation, modest theoretical results, re-analyses, or new perspectives, particularly from authors outside the usual ML publication circuit.</td></tr>
           </tbody></table>
-          <p class="fine-print">Maximum lengths exclude references and appendices.</p>
+          <p class="fine-print">References and appendices are excluded from page limits. <strong>Perspectives, benchmarks, and negative results are welcome in every format.</strong></p>
           <h3>Review and presentation</h3>
           <ul class="review-points">
-            <li><strong>Double-blind, non-archival review on OpenReview,</strong> with at least two reviews per submission. We prioritise ongoing and novel work.</li>
-            <li>All accepted papers will be presented as posters; selected papers will receive contributed talks.</li>
-            <li>Work under review or subsequently published elsewhere is welcome, subject to the other venues’ policies.</li>
+            <li><strong>Double-blind, non-archival OpenReview process.</strong> We will prioritise ongoing and novel work; accepted papers may be under review or subsequently published elsewhere, subject to the policies of other venues.</li>
+            <li>Each submission will receive at least two reviews. Reviewer assignment will reflect the nature of the contribution rather than a fixed track, with complementary expertise sought for work spanning theory, methods, and scientific validation.</li>
+            <li>All accepted papers will be presented as posters, with selected papers receiving contributed talks: nine presentations of 10 minutes each, three for each workshop theme.</li>
           </ul>
           <p class="fine-print">Under the proposed guidelines, short and tiny papers must be primarily human-authored. AI assistance is permitted; AI-generated papers are not.</p>
           <p class="submission-status">The workshop is proposed for ICLR 2027. Final instructions and the submission link will be published after acceptance.</p>
@@ -98,50 +109,45 @@
     </div></section>
     <section class="section container" id="speakers" aria-labelledby="speakers-title">
       <div class="section-top"><h2 id="speakers-title">Invited speakers</h2><p class="section-intro">Confirmed for the proposal; workshop acceptance is pending.</p></div>
+      <p class="speaker-intro">Six invited talks cover foundations, methods, and experimental validation across the sciences, including physics, chemistry, and distinct sub-fields of biology and therapeutics. The talks bridge diverse perspectives on shared open problems in generative discovery.</p>
       <div class="speaker-grid">
         <article class="speaker" data-person="stefano-ermon">
           <a class="person-link" href="https://cs.stanford.edu/~ermon/"><span class="portrait-frame"><img class="person-photo" src="assets/people/stefano-ermon.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Stefano Ermon</h3></a>
           <p class="affiliation">Stanford University · Inception</p>
-          <p class="speaker-area">Foundations · Methods</p>
-          <p>Deep generative models, controllable generation, and optimisation under scientific constraints.</p>
+          <p class="speaker-topics">Diffusion models · Controllable generation · Generative optimisation</p>
         </article>
         <article class="speaker" data-person="natasa-tagasovska">
           <a class="person-link" href="https://tagas.github.io/aboutme/"><span class="portrait-frame"><img class="person-photo" src="assets/people/natasa-tagasovska.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Nataša Tagasovska</h3></a>
           <p class="affiliation">Prescient Design, Genentech</p>
-          <p class="speaker-area">Methods · Validation</p>
-          <p>Generative molecular design, multi-objective optimisation, and learning from limited measurements.</p>
+          <p class="speaker-topics">Multi-objective Bayesian optimisation · Uncertainty estimation</p>
         </article>
         <article class="speaker" data-person="yilun-du">
           <a class="person-link" href="https://yilundu.github.io/"><span class="portrait-frame"><img class="person-photo" src="assets/people/yilun-du.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Yilun Du</h3></a>
           <p class="affiliation">Harvard University</p>
-          <p class="speaker-area">Foundations · Methods</p>
-          <p>Compositional generative models, energy-based methods, and generalisation beyond known data.</p>
+          <p class="speaker-topics">Compositional generation · Energy-based methods · Planning</p>
         </article>
         <article class="speaker" data-person="pranam-chatterjee">
           <a class="person-link" href="https://www.chatterjeelab.com/"><span class="portrait-frame"><img class="person-photo" src="assets/people/pranam-chatterjee.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Pranam Chatterjee</h3></a>
           <p class="affiliation">University of Pennsylvania</p>
-          <p class="speaker-area">Methods · Validation</p>
-          <p>Generative protein and peptide design, biological constraints, and experimental feedback.</p>
+          <p class="speaker-topics">Discrete generation · Property prediction · Experimental validation</p>
         </article>
         <article class="speaker" data-person="aditi-krishnapriyan">
           <a class="person-link" href="https://a1k12.github.io/"><span class="portrait-frame"><img class="person-photo" src="assets/people/aditi-krishnapriyan.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Aditi Krishnapriyan</h3></a>
-          <p class="affiliation">UC Berkeley · Lawrence Berkeley National Laboratory</p>
-          <p class="speaker-area">Methods · Validation</p>
-          <p>Physics-informed machine learning, differentiable simulation, and the simulation-to-experiment gap.</p>
+          <p class="affiliation">UC Berkeley</p>
+          <p class="speaker-topics">Physical inductive biases · Differentiable simulation · Neural surrogates</p>
         </article>
         <article class="speaker" data-person="andrew-gordon-wilson">
           <a class="person-link" href="https://cims.nyu.edu/~andrewgw/"><span class="portrait-frame"><img class="person-photo" src="assets/people/andrew-gordon-wilson.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Andrew Gordon Wilson</h3></a>
-          <p class="affiliation">NYU Courant</p>
-          <p class="speaker-area">Foundations · Methods</p>
-          <p>Uncertainty, Bayesian learning, and generative methods for protein, antibody, and materials design.</p>
+          <p class="affiliation">NYU Courant · Perplexity</p>
+          <p class="speaker-topics">Bayesian deep learning · Gaussian processes · Generalisation</p>
         </article>
       </div>
     </section>
     <section class="panel-section" id="panel" aria-labelledby="panel-title"><div class="container section">
-      <div class="section-top"><div><p class="eyebrow">Panel</p><h2 id="panel-title">Bridging the Gaps in Generative Discovery</h2></div><p class="section-intro">A proposed 60-minute panel on two gaps that shape generative discovery.</p></div>
+      <div class="section-top"><div><p class="eyebrow">Panel</p><h2 id="panel-title">Bridging the Gaps in Generative Discovery</h2></div><p class="section-intro">A proposed 60-minute panel bridging theoretical formulations and experimental needs, and scientific domains that face related discovery problems.</p></div>
       <div class="panel-modules">
-        <article class="panel-module"><p class="eyebrow">Module 01</p><h3>Bridging theory and experiment</h3><p>Relating theoretical objectives and algorithmic advances to experimental needs and constraints. The discussion covers model quality, optimisation, experiment selection, and the evidence needed to establish scientific progress.</p></article>
-        <article class="panel-module"><p class="eyebrow">Module 02</p><h3>Bridging scientific domains</h3><p>Identifying methods that transfer across sciences with different assumptions and priorities. The discussion covers simulation and experimental feedback, alongside shared meanings of diversity, novelty, and discovery.</p></article>
+        <article class="panel-module"><p class="eyebrow">Module 01</p><h3>Bridging theory and experiment</h3><p>Panellists confront theoretical principles with experimental constraints, examining where current methods serve scientific practice and where they still fall short. The discussion connects theoretical guarantees, computational benchmarks, and experimental validation with advances in generators, generative Bayesian optimisation, inverse modelling, and experimental design.</p></article>
+        <article class="panel-module"><p class="eyebrow">Module 02</p><h3>Bridging diverse scientific domains</h3><p>Panellists compare hidden assumptions and scientific priorities across domains, testing which methodological approaches to generative discovery transfer across applications. Topics include simulation-first discovery and the meanings of diversity, novelty, and discovery across the sciences.</p></article>
       </div>
       <div class="panel-people">
         <div><h3>Panellists</h3><ul class="panel-names"><li><a href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a></li><li><a href="https://tagas.github.io/aboutme/">Nataša Tagasovska</a></li><li><a href="https://www.chatterjeelab.com/">Pranam Chatterjee</a></li><li><a href="https://a1k12.github.io/">Aditi Krishnapriyan</a></li><li><a href="https://cims.nyu.edu/~andrewgw/">Andrew Gordon Wilson</a></li></ul></div>
@@ -153,25 +159,25 @@
       <div class="programme-highlights"><div><strong>6</strong><span>Invited talks</span></div><div><strong>9</strong><span>Contributed talks</span></div><div><strong>2</strong><span>Poster sessions</span></div><div><strong>1</strong><span>Cross-disciplinary panel</span></div></div>
       <details class="schedule-details"><summary><span>Tentative schedule</span><span class="summary-note">Subject to acceptance and change</span></summary><div class="schedule-scroll" role="region" aria-label="Tentative programme table" tabindex="0"><table><caption>Proposed schedule. Workshop date, venue, and time zone will be confirmed after acceptance.</caption><thead><tr><th scope="col">Time</th><th scope="col">Session</th><th scope="col">Details</th></tr></thead><tbody>
         <tr><th scope="row">08:45–09:00</th><td>Registration &amp; setup</td><td>Arrival and poster setup</td></tr>
-        <tr><th scope="row">09:00–09:10</th><td>Opening remarks</td><td>Workshop goals and central questions</td></tr>
-        <tr><th scope="row">09:10–09:35</th><td>Stefano Ermon</td><td>Invited talk</td></tr>
-        <tr><th scope="row">09:35–10:00</th><td>Andrew Gordon Wilson</td><td>Invited talk</td></tr>
+        <tr><th scope="row">09:00–09:10</th><td>Opening remarks</td><td>Workshop goals and central research question</td></tr>
+        <tr><th scope="row">09:10–09:35</th><td>Stefano Ermon</td><td>Invited talk · 20 + 5 minutes</td></tr>
+        <tr><th scope="row">09:35–10:00</th><td>Andrew Gordon Wilson</td><td>Invited talk · 20 + 5 minutes</td></tr>
         <tr><th scope="row">10:00–10:30</th><td>Contributed talks I</td><td>Theory and foundations · 3 × 10 minutes</td></tr>
-        <tr class="break-row"><th scope="row">10:30–11:20</th><td>Poster session 1 &amp; coffee</td><td>Discussion across workshop themes</td></tr>
-        <tr><th scope="row">11:20–11:45</th><td>Yilun Du</td><td>Invited talk</td></tr>
-        <tr><th scope="row">11:45–12:10</th><td>Nataša Tagasovska</td><td>Invited talk</td></tr>
-        <tr class="break-row"><th scope="row">12:10–13:10</th><td>Lunch break</td><td>Informal exchange</td></tr>
-        <tr><th scope="row">13:10–13:35</th><td>Pranam Chatterjee</td><td>Invited talk</td></tr>
+        <tr class="break-row"><th scope="row">10:30–11:20</th><td>Poster session 1 &amp; coffee</td><td>Discussion with authors across workshop themes</td></tr>
+        <tr><th scope="row">11:20–11:45</th><td>Yilun Du</td><td>Invited talk · 20 + 5 minutes</td></tr>
+        <tr><th scope="row">11:45–12:10</th><td>Nataša Tagasovska</td><td>Invited talk · 20 + 5 minutes</td></tr>
+        <tr class="break-row"><th scope="row">12:10–13:10</th><td>Lunch break</td><td>Informal exchange between method developers and experimental scientists</td></tr>
+        <tr><th scope="row">13:10–13:35</th><td>Pranam Chatterjee</td><td>Invited talk · 20 + 5 minutes</td></tr>
         <tr><th scope="row">13:35–14:05</th><td>Contributed talks II</td><td>Methods and systems · 3 × 10 minutes</td></tr>
-        <tr><th scope="row">14:05–14:30</th><td>Aditi Krishnapriyan</td><td>Invited talk</td></tr>
+        <tr><th scope="row">14:05–14:30</th><td>Aditi Krishnapriyan</td><td>Invited talk · 20 + 5 minutes</td></tr>
         <tr><th scope="row">14:30–15:00</th><td>Contributed talks III</td><td>Computational and experimental validation · 3 × 10 minutes</td></tr>
-        <tr class="break-row"><th scope="row">15:00–15:50</th><td>Poster session 2 &amp; coffee</td><td>Discussion across workshop themes</td></tr>
-        <tr><th scope="row">15:50–16:50</th><td><a href="#panel">Bridging the Gaps in Generative Discovery</a></td><td>Panel and audience Q&amp;A</td></tr>
-        <tr><th scope="row">16:50–17:15</th><td>Community synthesis</td><td>Open problems and a shared research roadmap</td></tr>
-        <tr><th scope="row">17:15–17:30</th><td>Closing remarks &amp; awards</td><td>Proposed best paper awards across the three themes</td></tr>
+        <tr class="break-row"><th scope="row">15:00–15:50</th><td>Poster session 2 &amp; coffee</td><td>Discussion with authors across workshop themes</td></tr>
+        <tr><th scope="row">15:50–16:50</th><td><a href="#panel">Bridging the Gaps in Generative Discovery</a></td><td>5 panellists + moderator Riccardo De Santi; includes 12 minutes of audience Q&amp;A</td></tr>
+        <tr><th scope="row">16:50–17:15</th><td>Community synthesis</td><td>Key insights, open problems, and priorities for a shared research roadmap</td></tr>
+        <tr><th scope="row">17:15–17:30</th><td>Closing remarks &amp; awards</td><td>Three best paper awards, one per theme, selected from contributed talks</td></tr>
       </tbody></table></div></details>
     </section>
-    <section class="organisers-section" id="organisers" aria-labelledby="organisers-title"><div class="container section"><div class="section-top"><h2 id="organisers-title">Organisers</h2><p class="section-intro">Connecting generative foundations, sequential decision-making, and scientific validation.</p></div><div class="organiser-grid">
+    <section class="organisers-section" id="organisers" aria-labelledby="organisers-title"><div class="container section"><div class="section-top"><h2 id="organisers-title">Organisers</h2></div><div class="organiser-grid">
       <div class="organiser" data-person="riccardo-de-santi">
         <a class="person-link" href="https://www.riccardodesanti.com/"><span class="portrait-frame"><img class="person-photo" src="assets/people/riccardo-de-santi.jpg" alt="" width="168" height="168" loading="lazy" decoding="async"></span><h3>Riccardo De Santi</h3></a>
         <p class="affiliation">ETH Zurich</p>

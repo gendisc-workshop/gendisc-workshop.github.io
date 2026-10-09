@@ -50,10 +50,11 @@ Section IDs: `about`, `participate` (draft call for papers), `speakers`, `panel`
 `programme`, `organisers`, and `contact`. The `themes` anchor points to the
 topics of interest within the call for papers.
 
-Content is adapted from the supplied workshop proposal. The PDF's filename mentions
-2026, but the document itself identifies the proposal as ICLR 2027. Speaker
-confirmations and affiliations reflect that proposal. The source PDF is not needed
-to serve the website and is not linked from the page.
+Content follows the supplied workshop proposal, preserving its scope qualifiers
+and illustrative open problems. The PDF's filename mentions 2026, but the document
+itself identifies the proposal as ICLR 2027. Speaker confirmations and methodology
+labels follow the proposal; affiliations include the organisers’ requested updates.
+The source PDF is not needed to serve the website and is not linked from the page.
 
 Keep the acceptance-pending banner, metadata, footer, and provisional wording until
 the workshop decision is known. Following acceptance, update the workshop date,
