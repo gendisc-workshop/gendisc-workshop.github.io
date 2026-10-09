@@ -9,7 +9,8 @@ algorithms, and validation.
 
 ## Website files
 
-- `index.html`: workshop text, speakers, panel, organisers, dates, and programme.
+- `index.html`: workshop scope, draft call for papers, speakers, panel,
+  organisers, dates, and programme.
 - `styles.css`: layout, colours, typography, and mobile styles.
 - `assets/`: discovery illustration and favicon (editable SVGs).
 - `assets/people/`: public profile portraits, with their original image and page
@@ -45,8 +46,9 @@ update the website. See [GitHub's publishing documentation](https://docs.github.
 ## Update the content
 
 Edit `index.html` locally or with GitHub's file editor and commit to `main`.
-Section IDs: `about`, `themes`, `speakers`, `panel`, `participate`, `programme`,
-`organisers`, and `contact`.
+Section IDs: `about`, `participate` (draft call for papers), `speakers`, `panel`,
+`programme`, `organisers`, and `contact`. The `themes` anchor points to the
+topics of interest within the call for papers.
 
 Content is adapted from the supplied workshop proposal. The PDF's filename mentions
 2026, but the document itself identifies the proposal as ICLR 2027. Speaker
