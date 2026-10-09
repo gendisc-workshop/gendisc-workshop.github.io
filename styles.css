@@ -110,7 +110,7 @@ figcaption { display: flex; align-items: center; justify-content: center; flex-w
 
 /* Speakers and organisers share one portrait treatment. */
 .speaker-intro { max-width: 1000px; margin-bottom: 24px; }
-.speaker-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.speaker-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
 .speaker, .organiser { padding-top: 22px; border-top: 1px solid var(--line); text-align: center; }
 .person-link { display: flex; flex-direction: column; align-items: center; gap: 14px; text-decoration: none; }
 .portrait-frame { display: block; width: 144px; height: 144px; flex-shrink: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 50%; background: var(--pale); }
