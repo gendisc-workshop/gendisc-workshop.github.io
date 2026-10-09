@@ -12,6 +12,9 @@ algorithms, and validation.
 - `index.html`: workshop text, speakers, organisers, dates, and programme.
 - `styles.css`: layout, colours, typography, and mobile styles.
 - `assets/`: discovery illustration and favicon (editable SVGs).
+- `assets/people/`: public profile portraits, with their original image and page
+  URLs recorded in `sources.json`. Each name and portrait links to that person's
+  personal or lab website. Circular crops are applied in CSS.
 - `.nojekyll`: tells GitHub Pages to serve the static files directly.
 
 No build tools, packages, analytics, or external fonts are required.

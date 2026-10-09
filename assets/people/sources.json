@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Stefano Ermon",
+    "file": "assets/people/stefano-ermon.jpg",
+    "profile_url": "https://cs.stanford.edu/~ermon/",
+    "image_url": "https://cs.stanford.edu/~ermon/IMG_8217_s_1.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 267109,
+    "source_page_url": "https://cs.stanford.edu/~ermon/"
+  },
+  {
+    "name": "Nataša Tagasovska",
+    "file": "assets/people/natasa-tagasovska.jpg",
+    "profile_url": "https://tagas.github.io/aboutme/",
+    "image_url": "https://www.gene.com/assets/content/scientist_profile/NLRaUvnmQnyyU8ZFYMOhLtn1IAiPalwyoNSZeAsD.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 13457,
+    "source_page_url": "https://www.gene.com/scientists/our-scientists/natasa-tagasovska"
+  },
+  {
+    "name": "Yilun Du",
+    "file": "assets/people/yilun-du.jpg",
+    "profile_url": "https://yilundu.github.io/",
+    "image_url": "https://yilundu.github.io/images/yilun8_avatar.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 24312,
+    "source_page_url": "https://yilundu.github.io/"
+  },
+  {
+    "name": "Pranam Chatterjee",
+    "file": "assets/people/pranam-chatterjee.jpg",
+    "profile_url": "https://www.chatterjeelab.com/",
+    "image_url": "https://static.wixstatic.com/media/e77831_6f6bce0cf8404a8cab2b73051136c07e~mv2.jpeg/v1/crop/x_179,y_112,w_1008,h_1007/fill/w_360,h_360,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/pranam_headshot_2025.jpeg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 41297,
+    "source_page_url": "https://www.chatterjeelab.com/"
+  },
+  {
+    "name": "Aditi Krishnapriyan",
+    "file": "assets/people/aditi-krishnapriyan.jpg",
+    "profile_url": "https://a1k12.github.io/",
+    "image_url": "https://chemistry.berkeley.edu/sites/default/files/styles/openberkeley_brand_widgets_rectangle/public/aditi-krishnapriyan-768x512.jpg?itok=Y8wYXcjM&timestamp=1661531816",
+    "retrieved_on": "2026-10-09",
+    "bytes": 56385,
+    "source_page_url": "https://chemistry.berkeley.edu/people/aditi-krishnapriyan"
+  },
+  {
+    "name": "Andrew Gordon Wilson",
+    "file": "assets/people/andrew-gordon-wilson.jpg",
+    "profile_url": "https://cims.nyu.edu/~andrewgw/",
+    "image_url": "https://cims.nyu.edu/~andrewgw/bio/andrewheadshotnew.jpeg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 299789,
+    "source_page_url": "https://cims.nyu.edu/~andrewgw/bio/"
+  },
+  {
+    "name": "Riccardo De Santi",
+    "file": "assets/people/riccardo-de-santi.jpg",
+    "profile_url": "https://www.riccardodesanti.com/",
+    "image_url": "https://www.riccardodesanti.com/assets/img/desanti_riccardo.jpg?6b95bbdb102069b97c6e1c7a98a492ca",
+    "retrieved_on": "2026-10-09",
+    "bytes": 607062,
+    "source_page_url": "https://www.riccardodesanti.com/"
+  },
+  {
+    "name": "Giannis Daras",
+    "file": "assets/people/giannis-daras.webp",
+    "profile_url": "https://giannisdaras.com/",
+    "image_url": "https://mitsloan.mit.edu/sites/default/files/styles/profile_detail_headshot/public/profile-images/2026/10/08/profile-image-254396.png.webp?h=b044a8f9&itok=dWbxKfWQ",
+    "retrieved_on": "2026-10-09",
+    "bytes": 10322,
+    "source_page_url": "https://mitsloan.mit.edu/faculty/directory/giannis-daras"
+  },
+  {
+    "name": "Yucen Lily Li",
+    "file": "assets/people/yucen-lily-li.jpg",
+    "profile_url": "https://yucenli.github.io/",
+    "image_url": "https://yucenli.github.io/images/head.jpeg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 153640,
+    "source_page_url": "https://yucenli.github.io/"
+  },
+  {
+    "name": "Charlotte Bunne",
+    "file": "assets/people/charlotte-bunne.jpg",
+    "profile_url": "https://aimm.epfl.ch/group/",
+    "image_url": "https://aimm.epfl.ch/wp-content/uploads/2024/11/%E2%AD%90-Charlotte-Bunne-IMG_9905-300x300.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 15259,
+    "source_page_url": "https://aimm.epfl.ch/group/"
+  },
+  {
+    "name": "Gabriele Corso",
+    "file": "assets/people/gabriele-corso.jpg",
+    "profile_url": "https://gcorso.github.io/",
+    "image_url": "https://gcorso.github.io/assets/profile-pics/prof_image.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 202897,
+    "source_page_url": "https://gcorso.github.io/"
+  },
+  {
+    "name": "Rose Yu",
+    "file": "assets/people/rose-yu.jpg",
+    "profile_url": "https://roseyu.com/",
+    "image_url": "https://roseyu.com/images/profile.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 118328,
+    "source_page_url": "https://roseyu.com/"
+  },
+  {
+    "name": "Yisong Yue",
+    "file": "assets/people/yisong-yue.jpg",
+    "profile_url": "https://www.yisongyue.com/",
+    "image_url": "https://www.yisongyue.com/images/yue_headshot.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 194725,
+    "source_page_url": "https://www.yisongyue.com/"
+  },
+  {
+    "name": "Andreas Krause",
+    "file": "assets/people/andreas-krause.jpg",
+    "profile_url": "https://las.inf.ethz.ch/krausea",
+    "image_url": "https://las.inf.ethz.ch/wp-content/uploads/2025/07/Andreas-Krause-2025-web.jpg",
+    "retrieved_on": "2026-10-09",
+    "bytes": 28577,
+    "source_page_url": "https://las.inf.ethz.ch/krausea"
+  }
+]
