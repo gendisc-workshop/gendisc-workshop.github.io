@@ -9,7 +9,7 @@ algorithms, and validation.
 
 ## Website files
 
-- `index.html`: workshop text, speakers, organisers, dates, and programme.
+- `index.html`: workshop text, speakers, panel, organisers, dates, and programme.
 - `styles.css`: layout, colours, typography, and mobile styles.
 - `assets/`: discovery illustration and favicon (editable SVGs).
 - `assets/people/`: public profile portraits, with their original image and page
@@ -45,7 +45,7 @@ update the website. See [GitHub's publishing documentation](https://docs.github.
 ## Update the content
 
 Edit `index.html` locally or with GitHub's file editor and commit to `main`.
-Section IDs: `about`, `themes`, `speakers`, `participate`, `programme`,
+Section IDs: `about`, `themes`, `speakers`, `panel`, `participate`, `programme`,
 `organisers`, and `contact`.
 
 Content is adapted from the supplied workshop proposal. The PDF's filename mentions
