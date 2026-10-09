@@ -50,9 +50,8 @@ Section IDs: `about`, `participate` (draft call for papers), `speakers`, `panel`
 `programme`, `organisers`, and `contact`. The `themes` anchor points to the
 topics of interest within the call for papers.
 
-Content follows the supplied workshop proposal, preserving its scope qualifiers
-and illustrative open problems. The PDF's filename mentions 2026, but the document
-itself identifies the proposal as ICLR 2027. Speaker confirmations and methodology
+Content follows `GenDisc_Proposal_ICLR_2027.pdf`, preserving its scope qualifiers
+and illustrative open problems. Speaker confirmations and methodology
 labels follow the proposal; affiliations include the organisers’ requested updates.
 The source PDF is not needed to serve the website and is not linked from the page.
 
